@@ -1,1 +1,126 @@
 skdkjhdkhjf
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~
+$ git config --global user.name "shubhampatil9921"
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~
+$ git config --global user.email "shubhampatiltakali@gmail.com"
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=shubhampatil9921
+user.email=shubhampatiltakali@gmail.com
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~
+$ cd Desktop
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop
+$ cd n
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/n (om)
+$ cd ..
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop
+$ mkdir w
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop
+$ cd w
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w
+$ touch a.txt
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w
+$ git init
+Initialized empty Git repository in C:/Users/HP/Desktop/w/.git/
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git add .
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.txt
+
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git commit -m "rupesh"
+[master (root-commit) 01801bc] rupesh
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git --list
+unknown option: --list
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ nano a.txt
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git add .
+warning: in the working copy of 'a.txt', LF will be replaced by CRLF the next time Git touches it
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git commit -m "rupesh"
+[master 6da8e52] rupesh
+ 1 file changed, 1 insertion(+)
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git remote add origin https://github.com/shubhampatil9921/ass2.git
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 393 bytes | 393.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/shubhampatil9921/ass2.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+HP@LAPTOP-7957AMJ2 MINGW64 ~/Desktop/w (master)
+
+
